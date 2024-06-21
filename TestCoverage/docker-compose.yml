@@ -1,0 +1,9 @@
+name: date-extensions-test 
+services:
+  coverage-report:
+    container_name: date-extensions-coverage-report
+    build:
+        context: .
+        dockerfile: ./tests/DateExtensions.UnitTests/Dockerfile
+    ports:
+      - "7271:80"
